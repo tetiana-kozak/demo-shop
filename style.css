@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-image: url(images/patt.png);
@@ -230,11 +236,6 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.content {
-    padding-top: 30px;
-    /* padding-left: 30px; */
-}
-
 .layout {
     border-top: #fff solid 1px;
     border-bottom: #fff solid 1px;
@@ -285,7 +286,6 @@ body {
 }
 
 .tile {
-    height: 200px;
     background-color: rgba(44, 113, 184, 0.75);
     border: #fff solid 1px;
 }
@@ -335,3 +335,67 @@ body {
     width: 20px;
 }
 
+.tile .content {
+    font-size: 21px;
+    padding: 15px;
+    padding-bottom: 0;
+}
+
+.tile .content p {
+    margin-top: 15px;
+}
+
+.tile .content .title{
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.tile .content span{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tile .price {
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.tile .price .integer {
+    font-size: 48px;
+    text-align: center;
+}
+
+.tile .price sup {
+    vertical-align: super;
+    font-size: 20px;
+}
+
+.tile .buttons {
+    
+    margin: 30px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.tile .buttons .button{
+    font-weight: bold;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #2c71b8;
+    border: #fff solid 1px;
+    height: 50px;
+}
+
+.tile .buttons .button.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.tile .buttons .button.cart img {
+    padding-left: 15px;
+}

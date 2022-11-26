@@ -241,28 +241,33 @@ body {
     border-bottom: #fff solid 1px;
 }
 
-.passes {
+.breadcrumbs {
     display: flex;
     margin: 30px 0;
 }
 
-.pass a {
+.breadcrumbs .item a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
 }
 
-.pass::after {
+.breadcrumbs .item::after {
     content: ">";
     padding: 0 10px;
     color: rgba(255, 255, 255, 0.5);
 }
-.pass:last-child::after {
+.breadcrumbs .item:last-child::after {
     content: "";
 }
 
-.pass:last-child a {
+.breadcrumbs .item:last-child a {
     border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
+}
+
+.breadcrumbs .item a:hover {
+    color: #fff;
+    transition: all ease-in-out .3s;
 }
 
 .content-header {

@@ -14,7 +14,7 @@ body {
     color: #fff;
 }
 
-.header {
+body > .header {
     background-color: rgba(255, 255, 255, 0.75);
     height: 100px;
     display: flex;
@@ -232,8 +232,36 @@ body {
 }
 
 .sidebar {
-    height: 850px;
+    /* height: 850px; */
     background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border: #fff 1px solid;
+    border-top: none;
+    font-size: 21px;
+}
+
+.sidebar .filter {
+    margin-bottom: 60px;
+}
+
+.sidebar .filter:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar .filter .header {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.sidebar .filter .checkboxes {
+
+}
+
+.sidebar .filter .checkbox {
+    padding-top: 20px;
+}
+
+.sidebar .more {
 }
 
 .layout {

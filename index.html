@@ -203,29 +203,12 @@
                   <h1 class="col-5">Laptops and Tablets</h1>
                   <div class="col-4">
                     <div class="sorting-menu">
-                      <div class="dropdown">
-                        <p>Sort by price</p>
-                        <svg
-                          width="15px"
-                          height="15px"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M4 8L12 16L20 8"
-                            stroke="white"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </div>
-                      <ul class="items">
-                        <li class="item">Sort by name</li>
-                        <li class="item">Sort by date</li>
-                        <li class="item">Sort by popularity</li>
-                      </ul>
+                        <select name="sorting" id="sorting">
+                            <option value="price">Sort by price</option>
+                            <option value="name">Sort by name</option>
+                            <option value="date">Sort by date</option>
+                            <option value="popularity">Sort by popularity</option>
+                        </select>
                     </div>
                   </div>
                 </div>

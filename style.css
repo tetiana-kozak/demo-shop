@@ -1,504 +1,531 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 button {
-    margin: 0;
-    padding: 0;
-    border: none;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-image: url(images/patt.png);
-    color: #fff;
+  font-family: "Roboto", sans-serif;
+  background-image: url(images/patt.png);
+  color: #fff;
 }
 
 body > .header {
-    background-color: rgba(255, 255, 255, 0.75);
-    height: 100px;
-    display: flex;
-    align-items: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  height: 100px;
+  display: flex;
+  align-items: center;
 }
 
 .container {
-    width: 1200px;
-    padding: 0 15px;
-    margin: auto;
+  width: 1200px;
+  padding: 0 15px;
+  margin: auto;
 }
 
 .row {
-    display: flex;
-    margin: 0 -15px;
-    flex-wrap: wrap;
+  display: flex;
+  margin: 0 -15px;
+  flex-wrap: wrap;
 }
 
 [class*="col-"] {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 
 .col-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
 }
 
 .col-4 {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
 }
 
 .col-5 {
-    flex: 0 0 66.666%;
-    max-width: 66.666%;
+  flex: 0 0 66.666%;
+  max-width: 66.666%;
 }
 
 .col-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .col-9 {
-    flex: 0 0 75%;
-    max-width: 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
 }
 
 .col-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 .logo {
-    padding-top: 8px;
+  padding-top: 8px;
 }
 
 .menu {
-    display: flex;
+  display: flex;
 }
 
 .menu .item {
-    width: 25%;
+  width: 25%;
 }
 
 .menu .item:last-child a {
-    border-right: 1px solid #2c71b8;
+  border-right: 1px solid #2c71b8;
 }
 
 .menu .item > a {
-    display: block;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    text-decoration: none;
-    color: #2c71b8;
-    font-size: 21px;
-    border-left: 1px solid #2c71b8;
+  display: block;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  color: #2c71b8;
+  font-size: 21px;
+  border-left: 1px solid #2c71b8;
 }
 
-.menu .item:hover > a{
-    background-color: #2c71b8;
-    color: white;
+.menu .item:hover > a {
+  background-color: #2c71b8;
+  color: white;
 }
 
 .menu .item:hover path {
-    stroke: #fff;
+  stroke: #fff;
 }
 
 .menu .dropdown {
-    position: relative;
+  position: relative;
 }
 
 .menu .dropdown svg {
-    position: absolute;
-    top: 23px;
-    right: 10px;
+  position: absolute;
+  top: 23px;
+  right: 10px;
 }
 
 .dropdown-content {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 290px;
-    background-color: #2c71b8;
-    padding: 25px 0;
-    display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 290px;
+  background-color: #2c71b8;
+  padding: 25px 0;
+  display: none;
 }
 
 .menu .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 .dropdown-content li a {
-    display: block;
-    line-height: 40px;
-    padding-left: 30px;
-    color: #fff;
-    font-size: 21px;
-    text-decoration: none;
+  display: block;
+  line-height: 40px;
+  padding-left: 30px;
+  color: #fff;
+  font-size: 21px;
+  text-decoration: none;
 }
 
 .dropdown-content li:hover a {
-    color: #2c71b8;
-    background-color: #fff;
+  color: #2c71b8;
+  background-color: #fff;
 }
 
 .header .actions {
-    display: flex;
-    height: 50px;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .search-form {
-    display: flex;
-    justify-content: space-between;
-    height: 40px;
-    width: 200px;
-    border: #2c71b8 solid 1px;
-    padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  width: 200px;
+  border: #2c71b8 solid 1px;
+  padding: 5px;
 }
 
 .search-input {
-    width: 150px;
-    border: none;
-    background-color: transparent;
-    padding-left: 15px;
-    font-size: 21px;
-    color: #2c71b8;
+  width: 150px;
+  border: none;
+  background-color: transparent;
+  padding-left: 15px;
+  font-size: 21px;
+  color: #2c71b8;
 }
 
 .search-input::placeholder {
-    color: #2c71b8;
-    opacity: 1;
+  color: #2c71b8;
+  opacity: 1;
 }
 
 .search-input:focus-visible {
-    outline: none;
+  outline: none;
 }
 
 .search-input:focus {
-    color: #2c71b8;
-    border: none;
+  color: #2c71b8;
+  border: none;
 }
 
 .search-button {
-    width: 28px;
-    padding: 0;
-    margin: 0;
-    border: none;
-    background-color: #2c71b8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  width: 28px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: #2c71b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .cart {
-    position: relative;
+  position: relative;
 }
 
 .cart-button {
-    height: 40px;
-    width: 40px;
-    background-color: #fff;
-    border: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .cart .items {
-    position: absolute;
-    top: -25%;
-    left: -25%;
-    height: 20px;
-    width: 20px;
-    background-color: #2c71b8;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  height: 20px;
+  width: 20px;
+  background-color: #2c71b8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cart .items .item {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .slider {
-    height: 400px;
-    background-color: rgba(0, 0, 0, .2);
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .sidebar {
-    /* height: 850px; */
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 30px;
-    border: #fff 1px solid;
-    border-top: none;
-    font-size: 21px;
+  /* height: 850px; */
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border: #fff 1px solid;
+  border-top: none;
+  font-size: 21px;
 }
 
 .sidebar .filter {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .sidebar .filter:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .sidebar .filter .header {
-    text-transform: uppercase;
-    font-weight: 700;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .sidebar .filter .checkboxes {
-
 }
 
 .sidebar .filter .checkbox {
-    padding-top: 20px;
+  padding-top: 20px;
+}
+
+.checkbox label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox label::before {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 10px;
+  border: #fff 1px solid;
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked + label::before {
+    background-color: #fff;
 }
 
 .sidebar .more {
+  margin: 30px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sidebar .more:hover {
+  color: #0e243a;
 }
 
 .layout {
-    border-top: #fff solid 1px;
-    border-bottom: #fff solid 1px;
+  border-top: #fff solid 1px;
+  border-bottom: #fff solid 1px;
 }
 
 .breadcrumbs {
-    display: flex;
-    margin: 30px 0;
+  display: flex;
+  margin: 30px 0;
 }
 
 .breadcrumbs .item a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 14px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
 }
 
 .breadcrumbs .item::after {
-    content: ">";
-    padding: 0 10px;
-    color: rgba(255, 255, 255, 0.5);
+  content: ">";
+  padding: 0 10px;
+  color: rgba(255, 255, 255, 0.5);
 }
 .breadcrumbs .item:last-child::after {
-    content: "";
+  content: "";
 }
 
 .breadcrumbs .item:last-child a {
-    border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
+  border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
 }
 
 .breadcrumbs .item a:hover {
-    color: #fff;
-    transition: all ease-in-out .3s;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
 }
 
 .content-header {
-    margin-bottom: 50px;
-    line-height: 50px;
-    font-size: 48px;
-    font-weight: bold;
+  margin-bottom: 50px;
+  line-height: 50px;
+  font-size: 48px;
+  font-weight: bold;
 }
 
 .sorting-menu {
-    height: 100%;
-    background-color: #2c71b8;
-    font-size: 21px;
-    font-weight: normal;
-    text-transform: lowercase;
-    position: relative;
+  height: 100%;
+  background-color: #2c71b8;
+  font-size: 21px;
+  font-weight: normal;
+  text-transform: lowercase;
+  position: relative;
 }
 
 .sorting-menu .dropdown {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 16px;
-    border: #fff solid 1px;
-    cursor: pointer;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 16px;
+  border: #fff solid 1px;
+  cursor: pointer;
 }
 
-.sorting-menu .items{
-    position: absolute;
-    top: 50px;
-    right: 0;
-    z-index: 10;
-    width: 100%;
-    border: #fff solid 1px;
-    border-top: transparent;
-    background-color: #2c71b8;
-    display: none;
+.sorting-menu .items {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  border: #fff solid 1px;
+  border-top: transparent;
+  background-color: #2c71b8;
+  display: none;
 }
 
-.sorting-menu:hover .items{
-    display: block;
+.sorting-menu:hover .items {
+  display: block;
 }
 
-.sorting-menu .items .item{
-    padding-left: 20px;
-    padding-right: 16px;
-    line-height: 40px;
+.sorting-menu .items .item {
+  padding-left: 20px;
+  padding-right: 16px;
+  line-height: 40px;
 }
 
-.sorting-menu .items .item:hover{
-    background-color: #fff;
-    color: #2c71b8;
-    cursor: pointer;
+.sorting-menu .items .item:hover {
+  background-color: #fff;
+  color: #2c71b8;
+  cursor: pointer;
 }
 
 .tile {
-    background-color: rgba(44, 113, 184, 0.75);
-    border: #fff solid 1px;
-    margin-bottom: 30px;
+  background-color: rgba(44, 113, 184, 0.75);
+  border: #fff solid 1px;
+  margin-bottom: 30px;
 }
 
 .tile .image {
-    height: 180px;
-    background-color: rgba(255, 255, 255, 0.75);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .tile .actions {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .tile .actions .action {
-    height: 30px;
-    width: 30px;
-    border: #2c71b8 solid 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border: #2c71b8 solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .tile .actions .action:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-
 .tile .actions .action .zoom {
-    background-image: url(images/zoom-b.png);
-    background-repeat: no-repeat;
-    height: 20px;
-    width: 20px;
+  background-image: url(images/zoom-b.png);
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
 }
 
 .tile .actions .wish {
-    background-image: url(images/wish-b.png);
-    background-repeat: no-repeat;
-    height: 17px;
-    width: 20px;
+  background-image: url(images/wish-b.png);
+  background-repeat: no-repeat;
+  height: 17px;
+  width: 20px;
 }
 
 .tile .actions .action:hover {
-    background-color: #2c71b8;
-    transition: all ease-in-out .3s;
+  background-color: #2c71b8;
+  transition: all ease-in-out 0.3s;
 }
 
 .tile .actions .action:hover .zoom {
-    background-image: url(images/zoom-w.png);
+  background-image: url(images/zoom-w.png);
 }
 
 .tile .actions .action:hover .wish {
-    background-image: url(images/wish-w.png);
+  background-image: url(images/wish-w.png);
 }
 
 .tile .content {
-    font-size: 21px;
-    padding: 15px;
-    padding-bottom: 0;
+  font-size: 21px;
+  padding: 15px;
+  padding-bottom: 0;
 }
 
 .tile .content p {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
-.tile .content .title{
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: 0;
+.tile .content .title {
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 0;
 }
 
-.tile .content span{
-    font-weight: bold;
-    text-transform: uppercase;
+.tile .content span {
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .tile .price {
-    font-weight: bold;
-    margin: 30px 0;
+  font-weight: bold;
+  margin: 30px 0;
 }
 
 .tile .price .integer {
-    font-size: 48px;
-    text-align: center;
+  font-size: 48px;
+  text-align: center;
 }
 
 .tile .price sup {
-    vertical-align: super;
-    font-size: 22px;
-    padding-left: 8px;
+  vertical-align: super;
+  font-size: 22px;
+  padding-left: 8px;
 }
 
 .tile .buttons {
-    
-    margin: 30px;
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
+  margin: 30px;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.tile .buttons .button{
-    font-weight: bold;
-    font-size: 21px;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #2c71b8;
-    border: #fff solid 1px;
-    height: 50px;
-    cursor: pointer;
+.button {
+  width: 100%;
+  font-weight: bold;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2c71b8;
+  border: #fff solid 1px;
+  height: 50px;
+  cursor: pointer;
 }
 
 .tile .buttons .button.cart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-    background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .tile .buttons .button.cart img {
-    padding-left: 15px;
+  padding-left: 15px;
 }
 
 .load-more {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 85px;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 85px;
 }
 
 .footer {
-    background-color: rgba(255, 255, 255, 0.75);
-    height: 100px;
-    color: #2c71b8;
-    display: flex;
-    align-items: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  height: 100px;
+  color: #2c71b8;
+  display: flex;
+  align-items: center;
 }
 
 .footer p {
-    text-align: center;
+  text-align: center;
 }

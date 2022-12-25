@@ -76,7 +76,7 @@
                   <img src="images/cart-b.png" alt="" />
                 </button>
                 <div class="items">
-                  <div class="item">4</div>
+                  <div class="item cart-counter">0</div>
                 </div>
               </div>
             </div>
@@ -203,12 +203,12 @@
                   <h1 class="col-5">Laptops and Tablets</h1>
                   <div class="col-4">
                     <div class="sorting-menu">
-                        <select name="sorting" id="sorting">
-                            <option value="price">Sort by price</option>
-                            <option value="name">Sort by name</option>
-                            <option value="date">Sort by date</option>
-                            <option value="popularity">Sort by popularity</option>
-                        </select>
+                      <select name="sorting" id="sorting">
+                        <option value="price">Sort by price</option>
+                        <option value="name">Sort by name</option>
+                        <option value="date">Sort by date</option>
+                        <option value="popularity">Sort by popularity</option>
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -243,8 +243,10 @@
                         <p class="integer">$599<sup>25</sup></p>
                       </div>
                       <div class="buttons">
-                        <button class="button">More details</button>
-                        <button class="button cart">
+                        <button class="button more-details">
+                          More details
+                        </button>
+                        <button class="button cart add-to-cart">
                           <div>Add to cart</div>
                           <img src="images/cart-w.png" alt="" />
                         </button>
@@ -279,8 +281,10 @@
                         <p class="integer">$1250<sup>99</sup></p>
                       </div>
                       <div class="buttons">
-                        <button class="button">More details</button>
-                        <button class="button cart">
+                        <button class="button more-details">
+                          More details
+                        </button>
+                        <button class="button cart add-to-cart">
                           <div>Add to cart</div>
                           <img src="images/cart-w.png" alt="" />
                         </button>
@@ -315,8 +319,10 @@
                         <p class="integer">$399<sup>50</sup></p>
                       </div>
                       <div class="buttons">
-                        <button class="button">More details</button>
-                        <button class="button cart">
+                        <button class="button more-details">
+                          More details
+                        </button>
+                        <button class="button cart add-to-cart">
                           <div>Add to cart</div>
                           <img src="images/cart-w.png" alt="" />
                         </button>
@@ -351,8 +357,10 @@
                         <p class="integer">$599<sup>25</sup></p>
                       </div>
                       <div class="buttons">
-                        <button class="button">More details</button>
-                        <button class="button cart">
+                        <button class="button more-details">
+                          More details
+                        </button>
+                        <button class="button cart add-to-cart">
                           <div>Add to cart</div>
                           <img src="images/cart-w.png" alt="" />
                         </button>
@@ -387,8 +395,10 @@
                         <p class="integer">$1250<sup>99</sup></p>
                       </div>
                       <div class="buttons">
-                        <button class="button">More details</button>
-                        <button class="button cart">
+                        <button class="button more-details">
+                          More details
+                        </button>
+                        <button class="button cart add-to-cart">
                           <div>Add to cart</div>
                           <img src="images/cart-w.png" alt="" />
                         </button>
@@ -423,8 +433,10 @@
                         <p class="integer">$399<sup>50</sup></p>
                       </div>
                       <div class="buttons">
-                        <button class="button">More details</button>
-                        <button class="button cart">
+                        <button class="button more-details">
+                          More details
+                        </button>
+                        <button class="button cart add-to-cart">
                           <div>Add to cart</div>
                           <img src="images/cart-w.png" alt="" />
                         </button>
@@ -459,8 +471,10 @@
                         <p class="integer">$599<sup>25</sup></p>
                       </div>
                       <div class="buttons">
-                        <button class="button">More details</button>
-                        <button class="button cart">
+                        <button class="button more-details">
+                          More details
+                        </button>
+                        <button class="button cart add-to-cart">
                           <div>Add to cart</div>
                           <img src="images/cart-w.png" alt="" />
                         </button>
@@ -495,8 +509,10 @@
                         <p class="integer">$1250<sup>99</sup></p>
                       </div>
                       <div class="buttons">
-                        <button class="button">More details</button>
-                        <button class="button cart">
+                        <button class="button more-details">
+                          More details
+                        </button>
+                        <button class="button cart add-to-cart">
                           <div>Add to cart</div>
                           <img src="images/cart-w.png" alt="" />
                         </button>
@@ -531,8 +547,10 @@
                         <p class="integer">$399<sup>50</sup></p>
                       </div>
                       <div class="buttons">
-                        <button class="button">More details</button>
-                        <button class="button cart">
+                        <button class="button more-details">
+                          More details
+                        </button>
+                        <button class="button cart add-to-cart">
                           <div>Add to cart</div>
                           <img src="images/cart-w.png" alt="" />
                         </button>
@@ -553,5 +571,23 @@
         <p>© Copyright 2017</p>
       </div>
     </footer>
+
+    <div class="modal">
+      <div class="modal-block">
+        <form action="" class="form-call">
+          <div class="btn-close">X</div>
+          <h3>Please call for more details</h3>
+          <div class="form-field">
+            <input type="text" placeholder="Your name" />
+          </div>
+          <div class="form-field">
+            <input type="text" placeholder="Your phone" />
+          </div>
+          <button>Please call</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
   </body>
 </html>

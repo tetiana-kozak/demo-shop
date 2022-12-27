@@ -32,3 +32,19 @@ function openModal() {
 function closeModal() {
   modal.classList.remove("show");
 }
+
+// add likes
+
+let likes = document.querySelectorAll(".like");
+
+likes.forEach((item) => {
+  item.addEventListener("click", function () {
+    if (!item.classList.contains("active")) {
+      item.classList.add("active");
+      item.children[0].classList.add("wish-active");
+    } else {
+      item.classList.remove("active");
+      item.children[0].classList.remove("wish-active");
+    }
+  });
+});

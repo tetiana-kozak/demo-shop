@@ -390,6 +390,11 @@ input[type="checkbox"]:checked + label::before {
   cursor: pointer;
 }
 
+.tile .actions .action:first-child:hover {
+  background-color: #2c71b8;
+  transition: all ease-in-out 0.3s;
+}
+
 .tile .actions .action:last-child {
   margin-bottom: 0;
 }
@@ -408,17 +413,16 @@ input[type="checkbox"]:checked + label::before {
   width: 20px;
 }
 
-.tile .actions .action:hover {
+.tile .actions .wish-active {
+  background-image: url(images/wish-w.png);
+}
+
+.active {
   background-color: #2c71b8;
-  transition: all ease-in-out 0.3s;
 }
 
 .tile .actions .action:hover .zoom {
   background-image: url(images/zoom-w.png);
-}
-
-.tile .actions .action:hover .wish {
-  background-image: url(images/wish-w.png);
 }
 
 .tile .content {

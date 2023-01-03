@@ -1,3 +1,5 @@
+// cart counter
+
 let productsCountEl = document.querySelector(".cart-counter");
 let addToCartBtns = document.querySelectorAll(".add-to-cart");
 
@@ -7,7 +9,7 @@ addToCartBtns.forEach((button) => {
   });
 });
 
-//modal
+// modal
 
 let modal = document.querySelector(".modal");
 let moreDetailsBtns = document.querySelectorAll(".more-details");
@@ -47,4 +49,17 @@ likes.forEach((item) => {
       item.children[0].classList.remove("wish-active");
     }
   });
+});
+
+// add modal when scrolling
+
+let wasModalOpened = false;
+
+window.addEventListener("scroll", function () {
+  const pageHeight = document.documentElement.scrollHeight;
+
+  if (window.scrollY >= pageHeight / 2 && wasModalOpened == false) {
+    openModal();
+    wasModalOpened = true;
+  }
 });

@@ -51,7 +51,6 @@ likes.forEach((item) => {
 
     item.classList.toggle("active");
     item.children[0].classList.toggle("wish-active");
-
   });
 });
 
@@ -69,15 +68,13 @@ likes.forEach((item) => {
 // });
 
 function showModalByScroll() {
-  if (window.scrollY >= document.body.scrollHeight / 2) {
+  if (window.scrollY >= document.documentElement.scrollHeight / 2) {
     openModal();
+    window.removeEventListener("scroll", showModalByScroll);
   }
-  window.removeEventListener("scroll", showModalByScroll);
 }
 
 window.addEventListener("scroll", showModalByScroll);
-window.addEventListener("scroll", showModalByScroll);
-
 
 // slider
 

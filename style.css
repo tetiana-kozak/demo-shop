@@ -226,9 +226,80 @@ body > .header {
   font-size: 12px;
 }
 
-.slider {
-  height: 400px;
+.main-slider {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slick-dotted.slick-slider {
+  padding-bottom: 30px;
+  margin: 0 40px;
+}
+
+.slider {
+  margin: 0 20px;
+}
+
+.slick-dots {
+  bottom: 10px;
+}
+
+.slick-dots li {
+  width: 8px;
+  height: 8px;
+}
+
+.slick-dots li button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 1px solid white;
+}
+
+.slick-dots li button:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+}
+
+.slick-dots li.slick-active button {
+  background-color: white;
+}
+
+.slick-prev,
+.slick-next {
+  height: fit-content;
+  width: fit-content;
+  top: calc(50% - 30px);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px;
+}
+
+.slick-prev {
+  transform: rotate(180deg);
+  left: -50px;
+}
+
+.slick-prev:before {
+  content: url(images/arrow-slider.svg);
+}
+
+.slick-next {
+  right: -50px;
+}
+
+.slick-next:before {
+  content: url(images/arrow-slider.svg);
+}
+
+.slide {
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  line-height: 400px;
+  font-size: 40px;
 }
 
 .sidebar {

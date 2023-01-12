@@ -77,3 +77,16 @@ function showModalByScroll() {
 
 window.addEventListener("scroll", showModalByScroll);
 window.addEventListener("scroll", showModalByScroll);
+
+
+// slider
+
+$(".slider").slick({
+  dots: true,
+  infinite: true,
+  speed: 1000,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+});

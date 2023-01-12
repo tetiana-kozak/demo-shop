@@ -271,6 +271,7 @@ body > .header {
   height: fit-content;
   width: fit-content;
   top: calc(50% - 30px);
+  transform: translate(0);
 }
 
 .slick-prev:before,
